@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C11128B526D61C0300087BB6 /* MyRGBEyeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11128B426D61C0300087BB6 /* MyRGBEyeApp.swift */; };
+		C11128B926D61C0500087BB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C11128B826D61C0500087BB6 /* Assets.xcassets */; };
+		C11128BC26D61C0500087BB6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C11128BB26D61C0500087BB6 /* Preview Assets.xcassets */; };
+		C11128C726D61C0500087BB6 /* MyRGBEyeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11128C626D61C0500087BB6 /* MyRGBEyeTests.swift */; };
+		C11128D226D61C0500087BB6 /* MyRGBEyeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11128D126D61C0500087BB6 /* MyRGBEyeUITests.swift */; };
+		C11128E126D63AB000087BB6 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11128E026D63AB000087BB6 /* Game.swift */; };
+		C11128E326D63BDA00087BB6 /* RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11128E226D63BDA00087BB6 /* RGB.swift */; };
+		C11128E526D63FFD00087BB6 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11128E426D63FFD00087BB6 /* ColorExtension.swift */; };
+		C11128E726D641CA00087BB6 /* ColorCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11128E626D641CA00087BB6 /* ColorCircle.swift */; };
+		C11128EB26D6458200087BB6 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11128EA26D6458200087BB6 /* ViewExtension.swift */; };
+		C11128EE26D64C4D00087BB6 /* NeuButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11128ED26D64C4D00087BB6 /* NeuButtonStyle.swift */; };
+		C11128F026D64F3000087BB6 /* BevelText.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11128EF26D64F3000087BB6 /* BevelText.swift */; };
+		C111293426D6890F00087BB6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C111293326D6890F00087BB6 /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C11128C326D61C0500087BB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C11128A926D61C0300087BB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C11128B026D61C0300087BB6;
+			remoteInfo = MyRGBEye;
+		};
+		C11128CE26D61C0500087BB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C11128A926D61C0300087BB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C11128B026D61C0300087BB6;
+			remoteInfo = MyRGBEye;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C11128B126D61C0300087BB6 /* MyRGBEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyRGBEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C11128B426D61C0300087BB6 /* MyRGBEyeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRGBEyeApp.swift; sourceTree = "<group>"; };
+		C11128B826D61C0500087BB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C11128BB26D61C0500087BB6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C11128BD26D61C0500087BB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C11128C226D61C0500087BB6 /* MyRGBEyeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyRGBEyeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C11128C626D61C0500087BB6 /* MyRGBEyeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRGBEyeTests.swift; sourceTree = "<group>"; };
+		C11128C826D61C0500087BB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C11128CD26D61C0500087BB6 /* MyRGBEyeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyRGBEyeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C11128D126D61C0500087BB6 /* MyRGBEyeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRGBEyeUITests.swift; sourceTree = "<group>"; };
+		C11128D326D61C0500087BB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C11128E026D63AB000087BB6 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		C11128E226D63BDA00087BB6 /* RGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGB.swift; sourceTree = "<group>"; };
+		C11128E426D63FFD00087BB6 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		C11128E626D641CA00087BB6 /* ColorCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCircle.swift; sourceTree = "<group>"; };
+		C11128EA26D6458200087BB6 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		C11128ED26D64C4D00087BB6 /* NeuButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuButtonStyle.swift; sourceTree = "<group>"; };
+		C11128EF26D64F3000087BB6 /* BevelText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BevelText.swift; sourceTree = "<group>"; };
+		C111293326D6890F00087BB6 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C11128AE26D61C0300087BB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C11128BF26D61C0500087BB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C11128CA26D61C0500087BB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C11128A826D61C0300087BB6 = {
+			isa = PBXGroup;
+			children = (
+				C11128B326D61C0300087BB6 /* MyRGBEye */,
+				C11128C526D61C0500087BB6 /* MyRGBEyeTests */,
+				C11128D026D61C0500087BB6 /* MyRGBEyeUITests */,
+				C11128B226D61C0300087BB6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C11128B226D61C0300087BB6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C11128B126D61C0300087BB6 /* MyRGBEye.app */,
+				C11128C226D61C0500087BB6 /* MyRGBEyeTests.xctest */,
+				C11128CD26D61C0500087BB6 /* MyRGBEyeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C11128B326D61C0300087BB6 /* MyRGBEye */ = {
+			isa = PBXGroup;
+			children = (
+				C11128EC26D64C0000087BB6 /* View */,
+				C11128DF26D61C4A00087BB6 /* Model */,
+				C11128B426D61C0300087BB6 /* MyRGBEyeApp.swift */,
+				C111293326D6890F00087BB6 /* ContentView.swift */,
+				C11128B826D61C0500087BB6 /* Assets.xcassets */,
+				C11128BD26D61C0500087BB6 /* Info.plist */,
+				C11128BA26D61C0500087BB6 /* Preview Content */,
+			);
+			path = MyRGBEye;
+			sourceTree = "<group>";
+		};
+		C11128BA26D61C0500087BB6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C11128BB26D61C0500087BB6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C11128C526D61C0500087BB6 /* MyRGBEyeTests */ = {
+			isa = PBXGroup;
+			children = (
+				C11128C626D61C0500087BB6 /* MyRGBEyeTests.swift */,
+				C11128C826D61C0500087BB6 /* Info.plist */,
+			);
+			path = MyRGBEyeTests;
+			sourceTree = "<group>";
+		};
+		C11128D026D61C0500087BB6 /* MyRGBEyeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C11128D126D61C0500087BB6 /* MyRGBEyeUITests.swift */,
+				C11128D326D61C0500087BB6 /* Info.plist */,
+			);
+			path = MyRGBEyeUITests;
+			sourceTree = "<group>";
+		};
+		C11128DF26D61C4A00087BB6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C11128E026D63AB000087BB6 /* Game.swift */,
+				C11128E226D63BDA00087BB6 /* RGB.swift */,
+				C11128E426D63FFD00087BB6 /* ColorExtension.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C11128EC26D64C0000087BB6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C11128E626D641CA00087BB6 /* ColorCircle.swift */,
+				C11128EA26D6458200087BB6 /* ViewExtension.swift */,
+				C11128ED26D64C4D00087BB6 /* NeuButtonStyle.swift */,
+				C11128EF26D64F3000087BB6 /* BevelText.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C11128B026D61C0300087BB6 /* MyRGBEye */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C11128D626D61C0500087BB6 /* Build configuration list for PBXNativeTarget "MyRGBEye" */;
+			buildPhases = (
+				C11128AD26D61C0300087BB6 /* Sources */,
+				C11128AE26D61C0300087BB6 /* Frameworks */,
+				C11128AF26D61C0300087BB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyRGBEye;
+			productName = MyRGBEye;
+			productReference = C11128B126D61C0300087BB6 /* MyRGBEye.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C11128C126D61C0500087BB6 /* MyRGBEyeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C11128D926D61C0500087BB6 /* Build configuration list for PBXNativeTarget "MyRGBEyeTests" */;
+			buildPhases = (
+				C11128BE26D61C0500087BB6 /* Sources */,
+				C11128BF26D61C0500087BB6 /* Frameworks */,
+				C11128C026D61C0500087BB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C11128C426D61C0500087BB6 /* PBXTargetDependency */,
+			);
+			name = MyRGBEyeTests;
+			productName = MyRGBEyeTests;
+			productReference = C11128C226D61C0500087BB6 /* MyRGBEyeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C11128CC26D61C0500087BB6 /* MyRGBEyeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C11128DC26D61C0500087BB6 /* Build configuration list for PBXNativeTarget "MyRGBEyeUITests" */;
+			buildPhases = (
+				C11128C926D61C0500087BB6 /* Sources */,
+				C11128CA26D61C0500087BB6 /* Frameworks */,
+				C11128CB26D61C0500087BB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C11128CF26D61C0500087BB6 /* PBXTargetDependency */,
+			);
+			name = MyRGBEyeUITests;
+			productName = MyRGBEyeUITests;
+			productReference = C11128CD26D61C0500087BB6 /* MyRGBEyeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C11128A926D61C0300087BB6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					C11128B026D61C0300087BB6 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					C11128C126D61C0500087BB6 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = C11128B026D61C0300087BB6;
+					};
+					C11128CC26D61C0500087BB6 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = C11128B026D61C0300087BB6;
+					};
+				};
+			};
+			buildConfigurationList = C11128AC26D61C0300087BB6 /* Build configuration list for PBXProject "MyRGBEye" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C11128A826D61C0300087BB6;
+			productRefGroup = C11128B226D61C0300087BB6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C11128B026D61C0300087BB6 /* MyRGBEye */,
+				C11128C126D61C0500087BB6 /* MyRGBEyeTests */,
+				C11128CC26D61C0500087BB6 /* MyRGBEyeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C11128AF26D61C0300087BB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C11128BC26D61C0500087BB6 /* Preview Assets.xcassets in Resources */,
+				C11128B926D61C0500087BB6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C11128C026D61C0500087BB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C11128CB26D61C0500087BB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C11128AD26D61C0300087BB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C11128E126D63AB000087BB6 /* Game.swift in Sources */,
+				C11128F026D64F3000087BB6 /* BevelText.swift in Sources */,
+				C11128B526D61C0300087BB6 /* MyRGBEyeApp.swift in Sources */,
+				C11128EB26D6458200087BB6 /* ViewExtension.swift in Sources */,
+				C11128EE26D64C4D00087BB6 /* NeuButtonStyle.swift in Sources */,
+				C111293426D6890F00087BB6 /* ContentView.swift in Sources */,
+				C11128E326D63BDA00087BB6 /* RGB.swift in Sources */,
+				C11128E526D63FFD00087BB6 /* ColorExtension.swift in Sources */,
+				C11128E726D641CA00087BB6 /* ColorCircle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C11128BE26D61C0500087BB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C11128C726D61C0500087BB6 /* MyRGBEyeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C11128C926D61C0500087BB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C11128D226D61C0500087BB6 /* MyRGBEyeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C11128C426D61C0500087BB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C11128B026D61C0300087BB6 /* MyRGBEye */;
+			targetProxy = C11128C326D61C0500087BB6 /* PBXContainerItemProxy */;
+		};
+		C11128CF26D61C0500087BB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C11128B026D61C0300087BB6 /* MyRGBEye */;
+			targetProxy = C11128CE26D61C0500087BB6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C11128D426D61C0500087BB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C11128D526D61C0500087BB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C11128D726D61C0500087BB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MyRGBEye/Preview Content\"";
+				DEVELOPMENT_TEAM = 3JT45N9B99;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MyRGBEye/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paradox.MyRGBEye;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C11128D826D61C0500087BB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MyRGBEye/Preview Content\"";
+				DEVELOPMENT_TEAM = 3JT45N9B99;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MyRGBEye/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paradox.MyRGBEye;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C11128DA26D61C0500087BB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3JT45N9B99;
+				INFOPLIST_FILE = MyRGBEyeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paradox.MyRGBEyeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyRGBEye.app/MyRGBEye";
+			};
+			name = Debug;
+		};
+		C11128DB26D61C0500087BB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3JT45N9B99;
+				INFOPLIST_FILE = MyRGBEyeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paradox.MyRGBEyeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyRGBEye.app/MyRGBEye";
+			};
+			name = Release;
+		};
+		C11128DD26D61C0500087BB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3JT45N9B99;
+				INFOPLIST_FILE = MyRGBEyeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paradox.MyRGBEyeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyRGBEye;
+			};
+			name = Debug;
+		};
+		C11128DE26D61C0500087BB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3JT45N9B99;
+				INFOPLIST_FILE = MyRGBEyeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paradox.MyRGBEyeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyRGBEye;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C11128AC26D61C0300087BB6 /* Build configuration list for PBXProject "MyRGBEye" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C11128D426D61C0500087BB6 /* Debug */,
+				C11128D526D61C0500087BB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C11128D626D61C0500087BB6 /* Build configuration list for PBXNativeTarget "MyRGBEye" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C11128D726D61C0500087BB6 /* Debug */,
+				C11128D826D61C0500087BB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C11128D926D61C0500087BB6 /* Build configuration list for PBXNativeTarget "MyRGBEyeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C11128DA26D61C0500087BB6 /* Debug */,
+				C11128DB26D61C0500087BB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C11128DC26D61C0500087BB6 /* Build configuration list for PBXNativeTarget "MyRGBEyeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C11128DD26D61C0500087BB6 /* Debug */,
+				C11128DE26D61C0500087BB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C11128A926D61C0300087BB6 /* Project object */;
+}

@@ -31,6 +31,17 @@
 /// THE SOFTWARE.
 
 import UIKit
+import SwiftUI
+
+struct ViewControllerRepresentation: UIViewControllerRepresentable {
+    func makeUIViewController(context: Context) -> some UIViewController {
+        UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "ViewController") as! ViewController
+    }
+    
+    func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
+        
+    }
+}
 
 class ViewController: UIViewController {
   @IBOutlet weak var targetLabel: UILabel!
@@ -123,3 +134,12 @@ class ViewController: UIViewController {
     updateView()
   }
 }
+
+
+#if DEBUG
+struct ViewControllerPreviews: PreviewProvider {
+  static var previews: some View {
+    ViewControllerRepresentation()
+  }
+}
+#endif

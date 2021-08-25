@@ -45,8 +45,7 @@ struct ContentView: View {
   var body: some View {
     GeometryReader { geometry in
       ZStack {
-        Color.element
-          .edgesIgnoringSafeArea(.all)
+        Color.element.edgesIgnoringSafeArea(.all)
         VStack {
           ColorCircle(
             rgb: game.target,
@@ -99,11 +98,9 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
     Group {
+      //ContentView(guess: RGB()).previewDevice("iPhone 8")
       ContentView(guess: RGB())
-        .previewDevice("iPhone 8")
-      ContentView(guess: RGB())
-      ContentView(guess: RGB())
-        .previewDevice("iPhone 12 Pro Max")
+      //ContentView(guess: RGB()).previewDevice("iPhone 12 Pro Max")
     }
   }
 }
